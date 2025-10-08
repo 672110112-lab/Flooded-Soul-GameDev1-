@@ -49,12 +49,12 @@ namespace Flooded_Soul.System.Shop
             bg = new ParallaxManager("Shop/shop_inside", posOffset);
 
             #region Boat
-            upgradeBoatButton = new Button("Shop/ui_upgrade_items_boat", boatPos, posOffset, 7, 4, 1);
+            upgradeBoatButton = new Button("Shop/ui_upgrade_items_boat", boatPos, posOffset, 5, 4, 1);
             upgradeBoatButton.OnClick += UpgradeBoat;
             upgradeBoatButton.ChangeSprite(1);
             #endregion
             #region Hook
-            upgradeHookButton = new Button("Shop/ui_upgrade_items_fishrod", hookPos, posOffset, 7, 4, 1);
+            upgradeHookButton = new Button("Shop/ui_upgrade_items_fishrod", hookPos, posOffset, 5, 4, 1);
             upgradeHookButton.OnClick += UpgradeHook;
             upgradeHookButton.ChangeSprite(0);
             #endregion
@@ -67,7 +67,7 @@ namespace Flooded_Soul.System.Shop
             fishIconPos = new Vector2(.01f * Game1.instance.viewPortWidth + posOffset.X, .17f * Game1.instance.viewPortHeight + posOffset.Y);
             #endregion
             #region Cat Button
-            catUpgradeButton = new Button("Shop/shop_cat_sheet",catUpgradePos,posOffset,7f,4,1);
+            catUpgradeButton = new Button("Shop/shop_cat_sheet",catUpgradePos,posOffset,5f,4,1);
             catUpgradeButton.OnClick += CatClick;
             #endregion
         }
