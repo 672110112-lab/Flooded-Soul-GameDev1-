@@ -22,7 +22,7 @@ namespace Flooded_Soul.System.UI.Scene
         #endregion
         #region Collection Button
         Button collectionButton;
-        Vector2 collectionButtPos = new Vector2(.01f * Game1.instance.viewPortWidth, .45f * Game1.instance.viewPortHeight);
+        Vector2 collectionButtPos = new Vector2(.01f * Game1.instance.viewPortWidth, .4f * Game1.instance.viewPortHeight);
         #endregion
         #region Toggle Button
         Button toggleAutoSailButton;
@@ -43,11 +43,11 @@ namespace Flooded_Soul.System.UI.Scene
         #endregion
         #region Go Down Button
         Button goDownButton;
-        Vector2 goDownPos = new Vector2(.01f * Game1.instance.viewPortWidth, .7f * Game1.instance.viewPortHeight);
+        Vector2 goDownPos = new Vector2(.01f * Game1.instance.viewPortWidth, .75f * Game1.instance.viewPortHeight);
         #endregion
         #region Shop Button
         Button shopButton;
-        Vector2 shopButtPos = new Vector2(.01f * Game1.instance.viewPortWidth, .7f * Game1.instance.viewPortHeight);
+        Vector2 shopButtPos = new Vector2(.01f * Game1.instance.viewPortWidth, .75f * Game1.instance.viewPortHeight);
         #endregion
         #region Help Button
         Button helpButton;
@@ -63,18 +63,18 @@ namespace Flooded_Soul.System.UI.Scene
             posOffset = offset;
 
             #region Music Button
-            musicButton = new Button("UI_Icon/ui_music_mainmenu", musicButtPos, posOffset, 7.0f);
+            musicButton = new Button("UI_Icon/ui_music_mainmenu", musicButtPos, posOffset, 8.5f);
             musicButton.OnClick += MusicButtClick;    
             #endregion
             #region Collection Button
-            collectionButton = new Button("UI_Icon/ui_collection_mainmenu", collectionButtPos, posOffset, 5);
+            collectionButton = new Button("UI_Icon/ui_collection_mainmenu", collectionButtPos, posOffset, 6);
             collectionButton.OnClick += CollectionButtClick;
             #endregion
             #region Toggle Button
-            toggleAutoSailButton = new Button("UI_Icon/ui_autodrive_mainmenu", toggleAutoSailButtPos, posOffset,6,2,1);
+            toggleAutoSailButton = new Button("UI_Icon/ui_autodrive_mainmenu", toggleAutoSailButtPos, posOffset,7,2,1);
             toggleAutoSailButton.OnClick += ToggleAutoSailButtClick;
             toggleAutoSailButton.ChangeSprite(1);
-            toggleOnTopButton = new Button("UI_Icon/ui_hover_on_game", toggleOnTopPos, posOffset, 6, 2, 1);
+            toggleOnTopButton = new Button("UI_Icon/ui_hover_on_game", toggleOnTopPos, posOffset, 7, 2, 1);
             toggleOnTopButton.OnClick += ToggleOnTopClick;
             toggleOnTopButton.ChangeSprite(0);
             #endregion
@@ -85,17 +85,17 @@ namespace Flooded_Soul.System.UI.Scene
             fishPointPos = new Vector2(.01f * Game1.instance.viewPortWidth + posOffset.X, .26f * Game1.instance.viewPortHeight + posOffset.Y);
             #endregion
             #region Go Down Button
-            goDownButton = new Button("UI_Icon/sprite_icon_test", goDownPos, posOffset,6,5,1);
+            goDownButton = new Button("UI_Icon/sprite_icon_test", goDownPos, posOffset,7,5,1);
             goDownButton.OnClick += GoDown;
             goDownButton.ChangeSprite(4);
             #endregion
             #region Shop Button
-            shopButton = new Button("UI_Icon/sprite_icon_test", shopButtPos, posOffset, 6,5,1);
+            shopButton = new Button("UI_Icon/sprite_icon_test", shopButtPos, posOffset, 7,5,1);
             shopButton.OnClick += OpenShop;
             shopButton.ChangeSprite(0);
             #endregion
             #region Help Button
-            helpButton = new Button("UI_Icon/ui_help_botton", helpButtPos, posOffset, 7.0f);
+            helpButton = new Button("UI_Icon/ui_help_botton", helpButtPos, posOffset, 8.5f);
             helpButton.OnClick += HelpClick;
             #endregion
             #region Exit Button

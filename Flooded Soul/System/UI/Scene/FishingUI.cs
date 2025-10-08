@@ -33,7 +33,7 @@ namespace Flooded_Soul.System.UI.Scene
             posOffset = offset;
 
             #region PauseButton
-            pauseButton = new Button("UI_Icon/ui_pause_mainmenu", pauseButtPos, posOffset, 6.5f);
+            pauseButton = new Button("UI_Icon/ui_pause_mainmenu", pauseButtPos, posOffset, 8.5f);
             pauseButton.OnClick += PauseButtClick;
             #endregion
             #region BackButton

@@ -95,13 +95,13 @@ namespace Flooded_Soul.System.Collection
         {
             Initialize(posOffset);
 
-            leftButton = new Button("UI_Icon/ui_collection_Leftbutton", leftPos, posOffset, 6f);
+            leftButton = new Button("UI_Icon/ui_collection_Leftbutton", leftPos, posOffset, 7f);
             leftButton.OnClick += LeftButtClick;
-            rightButton = new Button("UI_Icon/ui_collection_Rightbutton", rightPos, posOffset, 6f);
+            rightButton = new Button("UI_Icon/ui_collection_Rightbutton", rightPos, posOffset, 7f);
             rightButton.OnClick += RightButtClick;
-            upButton = new Button("UI_Icon/ui_collection_UpButton", upPos, posOffset, 6f);
+            upButton = new Button("UI_Icon/ui_collection_UpButton", upPos, posOffset, 7f);
             upButton.OnClick += UpButtClick;
-            downButton = new Button("UI_Icon/ui_collection_DownButton", downPos, posOffset, 6f);
+            downButton = new Button("UI_Icon/ui_collection_DownButton", downPos, posOffset, 7f);
             downButton.OnClick += DownButtClick;
             backButton = new Button("UI_Icon/ui_return", backPos, posOffset, 5.5f);
             backButton.OnClick += BackButtClick;
